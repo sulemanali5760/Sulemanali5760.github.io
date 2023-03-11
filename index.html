@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Machine Learning Engineer Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="hero">
-			<h1>Machine Learning Engineer</h1>
-			<p>Transforming data into insights</p>
-			<a href="#projects" class="cta">View Projects</a>
-		</div>
-	</header>
-	<main>
-		<section id="about">
-			<h2>About Me</h2>
-			<p>I'm a machine learning engineer with a passion for using data to solve complex problems. With experience in various programming languages and a solid understanding of algorithms and statistics, I'm able to design and implement innovative solutions that improve processes and deliver meaningful insights.</p>
-			<img src="profile-picture.jpg" alt="Profile Picture">
-		</section>
-		<section id="projects">
-			<h2>Projects</h2>
-			<div class="project">
-				<img src="project-1.jpg" alt="Project 1">
-				<h3>Project 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo ac velit dignissim luctus. Proin non diam nunc.</p>
-				<a href="#" class="cta">View Project</a>
-			</div>
-			<div class="project">
-				<img src="project-2.jpg" alt="Project 2">
-				<h3>Project 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo ac velit dignissim luctus. Proin non diam nunc.</p>
-				<a href="#" class="cta">View Project</a>
-			</div>
-		</section>
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Python</li>
-				<li>R</li>
-				<li>Java</li>
-				<li>SQL</li>
-				<li>Machine Learning Algorithms</li>
-				<li>Data Analysis</li>
-				<li>Statistics</li>
-			</ul>
-		</section>
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<form action="#" method="post">
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message</label>
-				<textarea id="message" name="message" required></textarea>
-				<button type="submit">Send Message</button>
-			</form>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 Machine Learning Engineer</p>
-	</footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Machine Learning Engineer</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Hi, I'm John Doe</h1>
+        <p>I'm a machine learning engineer based in San Francisco, CA.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a machine learning engineer with a passion for using data to create meaningful insights and applications. I have experience working on a range of projects, including natural language processing, computer vision, and predictive modeling. In my free time, I enjoy reading about the latest advancements in AI and exploring new technologies.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Text Classification with TensorFlow</h3>
+          <p>A deep learning model to classify text into different categories using TensorFlow.</p>
+          <a href="https://github.com/johndoe/text-classification-tensorflow" class="btn">View Code</a>
+        </div>
+        <div class="project">
+          <h3>Image Recognition with Keras</h3>
+          <p>A convolutional neural network to recognize objects in images using Keras.</p>
+          <a href="https://github.com/johndoe/image-recognition-keras" class="btn">View Code</a>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>TensorFlow</li>
+          <li>Keras</li>
+          <li>Scikit-learn</li>
+          <li>PyTorch</li>
+          <li>SQL</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
