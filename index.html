@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Engineer Portfolio</title>
+    <title>Suleman Ali — Automation Engineering</title>
+    <meta name="description" content="Suleman Ali — automation and electrical engineering: PLC programming, EPLAN Electric P8, commissioning and industrial data.">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">Machine Learning Engineer</div>
+        <span class="logo">Suleman Ali</span>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -18,52 +19,116 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section id="hero">
-        <h1>Hi, I'm John Doe</h1>
-        <p>I'm a machine learning engineer based in San Francisco, CA.</p>
-        <a href="#contact" class="btn">Contact Me</a>
+        <h1>Suleman Ali</h1>
+        <p class="tagline">
+          Automation &amp; electrical engineering — PLC software, control panel design,
+          and getting things to actually run on the machine.
+        </p>
+        <p class="meta">Magdeburg, Germany</p>
+        <a href="#projects" class="btn">See my work</a>
       </section>
+
       <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a machine learning engineer with a passion for using data to create meaningful insights and applications. I have experience working on a range of projects, including natural language processing, computer vision, and predictive modeling. In my free time, I enjoy reading about the latest advancements in AI and exploring new technologies.</p>
+        <h2>About</h2>
+        <p>
+          I work on the control side of industrial systems: programming PLCs, designing
+          and documenting control panels in EPLAN Electric P8, and commissioning
+          low-voltage equipment. I studied electrical engineering and I am currently
+          doing my master's at Otto von Guericke University Magdeburg.
+        </p>
+        <p>
+          What I enjoy most is the part where a design meets reality — the measurement
+          that does not match the spec, and the work of finding out why. Most of the
+          projects below started from exactly that.
+        </p>
       </section>
+
       <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-          <h3>Text Classification with TensorFlow</h3>
-          <p>A deep learning model to classify text into different categories using TensorFlow.</p>
-          <a href="https://github.com/johndoe/text-classification-tensorflow" class="btn">View Code</a>
-        </div>
-        <div class="project">
-          <h3>Image Recognition with Keras</h3>
-          <p>A convolutional neural network to recognize objects in images using Keras.</p>
-          <a href="https://github.com/johndoe/image-recognition-keras" class="btn">View Code</a>
-        </div>
+
+        <article class="project">
+          <h3>OPC UA Test Automation Pipeline</h3>
+          <p>
+            Pulls live process data off a PLC over OPC UA, checks it against a written
+            test-case spec, and generates a pass/fail report. Built around a real fault:
+            a chattering contactor on a high-current feeder, traced to control voltage
+            sagging to ~18&nbsp;V against a 20&nbsp;V hold-in spec under inrush.
+          </p>
+          <p class="stack">Python · asyncua · OPC UA · YAML</p>
+          <a href="https://github.com/sulemanali5760/opc-ua-test-automation-pipeline" class="btn">View code</a>
+        </article>
+
+        <article class="project">
+          <h3>TwinCAT 3 Pick-&amp;-Place Framework</h3>
+          <p>
+            A minimal node-tree automation framework in Structured Text: one
+            <code>Cyclic()</code> call on the root runs the whole machine, one
+            <code>SetMode()</code> pushes the operating mode down the tree. Includes a
+            pick-and-place unit that runs on a soft-PLC with no I/O attached.
+          </p>
+          <p class="stack">TwinCAT 3 · Structured Text · IEC 61131-3</p>
+          <a href="https://github.com/sulemanali5760/twincat3-pickplace-framework" class="btn">View code</a>
+        </article>
+
+        <article class="project">
+          <h3>IoT Sensor Data Pipeline</h3>
+          <p>
+            Machine-condition monitoring end to end: sensor data collected over MQTT,
+            persisted to SQLite, and visualised for trend and anomaly review.
+          </p>
+          <p class="stack">Python · MQTT · SQLite · ESP32</p>
+          <a href="https://github.com/sulemanali5760/iot-sensor-data-pipeline" class="btn">View code</a>
+        </article>
       </section>
+
       <section id="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>Python</li>
-          <li>TensorFlow</li>
-          <li>Keras</li>
-          <li>Scikit-learn</li>
-          <li>PyTorch</li>
-          <li>SQL</li>
-        </ul>
+        <div class="skill-groups">
+          <div>
+            <h3>Automation</h3>
+            <ul>
+              <li>TwinCAT 3 / Structured Text</li>
+              <li>PLC programming (IEC 61131-3)</li>
+              <li>HMI configuration</li>
+              <li>Commissioning &amp; fault finding</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Electrical</h3>
+            <ul>
+              <li>EPLAN Electric P8</li>
+              <li>Control panel design</li>
+              <li>Sensors, VFDs, servos</li>
+              <li>Low-voltage protection</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Software</h3>
+            <ul>
+              <li>Python</li>
+              <li>OPC UA, MQTT</li>
+              <li>SQL / SQLite</li>
+              <li>JavaScript, HTML/CSS</li>
+            </ul>
+          </div>
+        </div>
       </section>
+
       <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="POST">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
-          <button type="submit" class="btn">Send</button>
-        </form>
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:suleman.ali5760@gmail.com">suleman.ali5760@gmail.com</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com/sulemanali5760">github.com/sulemanali5760</a>
+        </p>
       </section>
     </main>
+
+    <footer>
+      <p>© 2026 Suleman Ali</p>
+    </footer>
   </body>
 </html>
